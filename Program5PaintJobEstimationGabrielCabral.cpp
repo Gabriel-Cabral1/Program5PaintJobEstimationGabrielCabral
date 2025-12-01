@@ -1,6 +1,6 @@
 ﻿﻿/*
- Project Name : Program5PaintJobEstimatorGabrielCabral
- File Name : Program5PaintJobEstimatorGabrielCabral.cpp
+ Project Name : Program5PaintJobEstimationGabrielCabral
+ File Name : Program5PaintJobEstimationGabrielCabral.cpp
  Programmer : Gabriel Cabral
  Date : 11/30/25
  Requirements:
@@ -42,10 +42,10 @@ int main()
 	double laborcharge = 0.0;
 	double gallonsneeded = 0.0;
 	double laborhours = 0.0;
-	int numberooms = getrooms();
+	int numrooms = getrooms();
 
 	//math for each room
-	for (int room = 1; room <= numberooms; room++)
+	for (int room = 1; room <= numrooms; room++)
 	{
 		cout << "\nRoom " << room << endl;
 
@@ -100,7 +100,7 @@ double getpricepergallon()
 		{
 			cout << "Price must be at leat $10.00.\n";
 		}
-	} while (price < 100);
+	} while (price < 10.0);
 	return price;
 }
 double gallonsforroom(double sqft) {
